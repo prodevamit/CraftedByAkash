@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- Browser tab title and the text shown in search results / link previews -->
+    <title>CraftedByAkash: Discover. Save. Revisit.</title>
+    <meta
+      name="description"
+      content="A visual library of things worth discovering."
+    />
+    <meta property="og:title" content="CraftedByAkash" />
+    <meta property="og:description" content="Discover. Save. Revisit." />
+
+    <!-- Fonts: Fredoka (headings) and Nunito (text) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- All colours, sizes and layout live in style.css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="flower-fall" aria-hidden="true">
+      <span>🌸</span>
+      <span>🌷</span>
+      <span>🌼</span>
+      <span>🌻</span>
+      <span>🌹</span>
+      <span>🌺</span>
+      <span>🏵️</span>
+      <span>🪻</span>
+    </div>
+
+    <!-- TOP BAR: logo, page links, search button, menu / profile button -->
+    <header class="nav" id="nav">
+      <a href="#/" class="logo brand-logo" aria-label="CraftedByAkash home">
+        <img src="images/crafted-by-akash-logo.png" alt="" />
+        <span>CraftedByAkash</span>
+      </a>
+
+      <nav class="links" aria-label="Primary">
+        <a href="#/">Home</a>
+        <a href="#/explore">Explore</a>
+        <a href="#/categories">Categories</a>
+        <a href="#/collections">Collections</a>
+        <a href="#/trending">Trending</a>
+      </nav>
+
+      <button class="sp" data-act="so" aria-label="Search products">
+        <svg class="i" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </svg>
+        <span>Search products</span>
+      </button>
+
+      <button
+        class="ib"
+        id="mb"
+        data-act="mn"
+        aria-label="Menu and account"
+      ></button>
+    </header>
+
+    <!-- Spinning flower shown when the site opens, then the name page -->
+    <div id="ld">
+      <div class="fl" role="img" aria-label="Loading">🌸</div>
+    </div>
+
+    <!-- Every page (home, product, categories...) is drawn inside this tag by script.js -->
+    <main id="app"></main>
+
+    <!-- Pop-ups: search, dialogs, full-screen picture viewer, small messages -->
+    <div id="so" hidden role="dialog" aria-label="Search"></div>
+    <div id="dlg" hidden></div>
+    <div class="vw" id="vw" hidden></div>
+    <div id="ts" role="status" aria-live="polite"></div>
+
+    <!-- BOTTOM BAR: only visible on phones -->
+    <nav class="bn" aria-label="Mobile">
+      <a href="#/" data-r="">Home</a>
+      <a href="#/explore" data-r="explore">Explore</a>
+      <button data-act="so">Search</button>
+      <a href="#/me/saved" data-r="me">Saved</a>
+      <a href="#/me" data-r="meP">Profile</a>
+    </nav>
+
+    <!-- All the code, plus your settings and products at the top of it -->
+    <script src="script.js"></script>
+  </body>
+</html>
