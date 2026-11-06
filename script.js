@@ -915,6 +915,14 @@ const PRODUCTS = [
     images: ["images/Mini Birthday Gift Hamper.jpeg"],
     brand: "CraftedByAkash",
     tags: ["mini hamper", "birthday", "gift set", "celebration"],
+  },
+  {
+    name: "Mini Photo Frame",
+    category: "Accessories",
+    description: "A small photo frame for displaying a cherished memory.",
+    images: ["images/Mini Photo Frame.jpeg"],
+    brand: "CraftedByAkash",
+    tags: ["mini", "photo frame", "accessory", "gift"],
   }
 ];
 
