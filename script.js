@@ -923,7 +923,15 @@ const PRODUCTS = [
     images: ["images/Mini Photo Frame.jpeg"],
     brand: "CraftedByAkash",
     tags: ["mini", "photo frame", "accessory", "gift"],
-  }
+  },
+   {
+      name: "Multicoloured Ribbon Rose Bouquet",
+      category: "Bouquets",
+      description: "A bouquet of white roses and pink roses wrapped with an elegant golden-edged ribbon.",
+      images: ["images/Multicoloured Ribbon Rose Bouquet.jpeg"],
+      brand: "CraftedByAkash",
+      tags: ["white roses", "pink roses", "ribbon", "bouquet", "flowers", "gift"],
+   }
 ];
 
 /* =====================================================================
